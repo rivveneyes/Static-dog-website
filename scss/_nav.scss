@@ -20,14 +20,14 @@ nav {
       }
     }
   }
-  .stickNav {
-    position: fixed;
-    width: 100%;
-    top: 0;
-  }
   .nav::after {
     content: "";
     clear: both;
     display: table;
   }
+}
+.stickNav {
+  position: fixed;
+  width: 100%;
+  top: 0;
 }

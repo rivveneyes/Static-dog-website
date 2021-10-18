@@ -1,27 +1,33 @@
-// const navigation = document.getElementById("navigation");
-// const divOne = document.getElementById("div2");
-// const displayDogs = document.getElementsByClassName("dogsDisplay");
+$(document).ready(function () {
+  async function getDogs() {
+    dogImages = await fetch("https://dog.ceo/api/breeds/image/random/3").then(
+      (res) => res.json()
+    );
 
-// async function getDogs() {
-//   dogImages = await fetch("https://dog.ceo/api/breeds/image/random/3").then(
-//     (res) => res.json()
-//   );
-//   dogImages.message.forEach((element, idx) => {
-//     displayDogs[idx].src = element;
-//   });
-// }
+    dogImages.message.forEach((element, idx) => {
+      $(".mentions")[idx].src = element;
+    });
+  }
+  getDogs();
 
-// getDogs();
+  $(window).scroll(function () {
+    Sticknav();
+  });
+});
 
-// window.onscroll = () => {
-//   Sticknav();
-// };
-
-// ======functions
 function Sticknav() {
-  if (navigation.offsetHeight < window.pageYOffset) {
-    navigation.classList.add("stickNav");
+  const navHeight = Math.floor($("nav").outerHeight());
+  console.log(navHeight / 2);
+  const scrollength = $(this).scrollTop();
+  console.log(scrollength);
+  if (navHeight / 2 < scrollength) {
+    console.log("hit");
+    $("nav").addClass("stickNav");
+    $("header").css("margin-top", navHeight.toString() + "px");
   } else {
-    navigation.classList.remove("stickNav");
+    console.log("waiting");
+    $("nav").removeClass("stickNav");
+    $("header").css("margin-top", "0px");
   }
 }
+// ======functions

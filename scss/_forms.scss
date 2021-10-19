@@ -1,0 +1,40 @@
+form {
+  margin: 5px;
+  .survey-title {
+    font-size: $med;
+    background-color: initial;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  border: 2px solid red;
+  border-top: none;
+  font-size: $small;
+  label {
+    text-align: left;
+    display: block;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  input[type="text"],
+  select {
+    width: 40%;
+    font-size: $x-small;
+  }
+}
+.radio-layout {
+  text-align: left;
+  padding-left: 20px;
+  small {
+    display: block;
+    width: 40%;
+    border-bottom: 2px solid red;
+    margin-bottom: 5px;
+  }
+  label {
+    width: fit-content;
+  }
+  label[for="boy"] {
+    padding-left: 10px;
+  }
+}

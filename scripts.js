@@ -17,11 +17,10 @@ $(document).ready(function () {
 
 function Sticknav() {
   const navHeight = Math.floor($("nav").outerHeight());
-  console.log(navHeight / 2);
+
   const scrollength = $(this).scrollTop();
-  console.log(scrollength);
+
   if (navHeight / 2 < scrollength) {
-    console.log("hit");
     $("nav").addClass("stickNav");
     $("header").css("margin-top", navHeight.toString() + "px");
   } else {

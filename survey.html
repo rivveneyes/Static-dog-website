@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9a7fac8c65.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Dogs Survey</title>
+  </head>
+  <nav id="navigation" class="">
+    <div class="title">
+      <span>Happy dog house</span>
+      <i class="fas fa-paw fa-2x"></i>
+    </div>
+    <ol class="link-container">
+      <li class="link"><a href="/">Home Page</a></li>
+      <li class="link"><a href="/">Min-game</a></li>
+    </ol>
+  </nav>
+  <body>
+    <form>
+      <h1 class="survey-title">Dogs survey</h1>
+      <label for="name">What is/"would be" your dogs name?</label>
+      <input type="text" name="name" id="name" />
+      <label for="size">Would you size dog do you have/want?</label>
+      <select id="size">
+        <option value="small">small</option>
+        <option value="medium">medium</option>
+        <option value="large">large</option>
+        <option value="any">any</option>
+      </select>
+      <div class="radio-layout">
+        <small>Boy or Girl</small>
+        <label for="boy">Boy</label>
+        <input type="radio" id="boy" name="sex" value="boy" />
+        <label for="girl">Girl</label>
+        <input type="radio" id="girl" name="sex" value="girl" />
+      </div>
+    </form>
+  </body>
+</html>

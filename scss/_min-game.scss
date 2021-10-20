@@ -1,0 +1,11 @@
+.reveal {
+  display: none;
+}
+@media (max-width: 760px) {
+  .reveal {
+    display: block;
+  }
+  .min-game {
+    display: none;
+  }
+}

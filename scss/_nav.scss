@@ -8,19 +8,22 @@ nav {
     display: flex;
     padding-bottom: 10px;
   }
-  span {
-    padding-right: 10px;
-  }
   ol {
     padding-bottom: 15px;
+    padding-left: 20px;
     display: flex;
     justify-content: left;
     font-size: $small;
   }
+  span {
+    padding-right: 10px;
+  }
   .link {
     padding-top: 5px;
     &:not(:last-child) {
-      padding-right: 15px;
+      margin-right: 10px;
+      padding-right: 5px;
+      border-right: 2px solid black;
     }
   }
 }

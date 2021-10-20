@@ -1,11 +1,12 @@
+.survey-title {
+  font-size: $x-larg;
+  background-color: initial;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
 form {
   margin: 5px;
-  .survey-title {
-    font-size: $med;
-    background-color: initial;
-    padding-top: 50px;
-    padding-bottom: 30px;
-  }
+  margin-top: 80px;
   border: 2px solid red;
   border-top: none;
   font-size: $small;
@@ -20,6 +21,18 @@ form {
   select {
     width: 40%;
     font-size: $x-small;
+  }
+  button {
+    float: right;
+    margin-right: 40px;
+    padding: 8px;
+    background-color: rgb(32, 164, 243);
+    border-color: rgb(32, 164, 243);
+    border-radius: 10px;
+    font-size: 18px;
+    &:hover {
+      color: white;
+    }
   }
 }
 .radio-layout {
@@ -36,5 +49,20 @@ form {
   }
   label[for="boy"] {
     padding-left: 10px;
+  }
+}
+@media (min-width: 760px) {
+  form {
+    max-width: 75%;
+    margin: auto;
+    border: none;
+    input[type="text"],
+    select {
+      width: 20%;
+      font-size: $x-small;
+    }
+    .radio-layout small {
+      width: 10%;
+    }
   }
 }
